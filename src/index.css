@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply font-sans antialiased selection:bg-indigo-500/30;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%);
+    width: 30%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  100% {
+    transform: translateX(300%);
+    width: 30%;
+  }
+}
