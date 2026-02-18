@@ -92,13 +92,6 @@ export interface SecurityResult {
 //     return 'UNKNOWN';
 // };
 
-// const getCvssSeverity = (score: string): string => {
-//     const num = parseFloat(score);
-//     if (num >= 9.0) return 'CRITICAL';
-//     if (num >= 7.0) return 'HIGH';
-//     if (num >= 4.0) return 'MEDIUM';
-//     return 'LOW';
-// };
 
 export const checkSecurityVulnerabilities = async (packageJson: any): Promise<SecurityResult> => {
     try {
