@@ -214,7 +214,7 @@ function App() {
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <a
-              href="https://github.com"
+              href="https://github.com/viraj-9901/DepScout-Frontend"
               target="_blank"
               rel="noreferrer"
               className={`group flex items-center gap-2 text-sm font-medium transition-colors ${theme === 'dark'
@@ -243,18 +243,19 @@ function App() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                   </span>
-                  <span>Trusted by 10,000+ developers</span>
+                  <span>Designed for devs who care about quality</span>
                 </div>
 
                 <h1 className={`text-5xl md:text-7xl font-extrabold tracking-tight pb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
                   }`}>
-                  Optimize your <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 animate-gradient bg-300%">dependencies</span>
+                  {/* Optimize your <br /> */}
+                  A simpler way to <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 animate-gradient bg-300%">inspect dependencies</span>
                 </h1>
 
                 <p className={`text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-medium ${theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'
                   }`}>
-                  Master your `package.json`. Scan for security risks, uncover outdated packages, and visualize your dependency tree in seconds.
+                  Insights your `package.json`. Scan for security risks, uncover outdated packages, and visualize your dependency tree in seconds.
                 </p>
               </div>
 
@@ -457,8 +458,8 @@ function App() {
                 {[
                   {
                     icon: Zap,
-                    title: 'Lightning Fast',
-                    desc: 'Analyze thousands of dependencies in milliseconds using local processing.'
+                    title: 'Fast Analysis',
+                    desc: 'Scans your project dependencies locally without sending data anywhere.'
                   },
                   {
                     icon: Shield,
@@ -492,7 +493,7 @@ function App() {
 
         <footer className={`border-t py-8 text-center text-sm font-medium ${theme === 'dark' ? 'border-white/5 text-zinc-600' : 'border-slate-200 text-slate-400'
           }`}>
-          <p>© 2026 PackageAnalyzer. Open source and free forever.</p>
+          <p>© 2026 DepScout. Open source and free forever.</p>
         </footer>
       </div>
     </div>
